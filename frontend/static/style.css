@@ -222,6 +222,19 @@ button.action:hover {
     color: black;
 }
 
+.light input,
+.light textarea {
+    border: 1px solid #d1d5db;
+    background: #ffffff;
+    color: #020617;
+}
+
+.light input:focus,
+.light textarea:focus {
+    border-color: #38bdf8;
+    outline: none;
+}
+
 /* ===== Huffman Animations ===== */
 .huff-item {
     animation: glowIn 0.4s ease forwards;
