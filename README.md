@@ -1,95 +1,195 @@
-# *🧠 AlgoLab Web Simulator Algoritma*
+# 🧠 AlgoLab Web Simulator Algoritma
+
+<div align="center">
+
+**Ujian Akhir Semester – Algoritma Pemrograman**  
+🏛️ **Universitas Muhammadiyah Malang**  
+📅 **Tahun Akademik 2026**
+
+</div>
+
 ---
 
->**Ujian Akhir Semester - Algoritma Pemrograman**  
->🏛️ Universitas Muhammadiyah Malang - 2025
+## 👥 Anggota Kelompok
 
-## 👥 Nama Anggota
+<div align="center">
+
 | Nama                     | NIM             |
 |--------------------------|-----------------|
-| Muhammad Robi Ardita     | 202410370110002 |
+| Muhamad Robi Ardita      | 202410370110002 |
 | Syahrial Nur Faturrahman | 202410370110009 |
 | Farid Al Farizi          | 202410370110017 |
 | Naufal Arkaan            | 202410370110020 |
 
+</div>
+
 ---
 
 ## 📜 Deskripsi Proyek
-**AlgoLab Web Simulator Algoritma** adalah aplikasi berbasis web yang dikembangkan sebagai **Project UAS mata kuliah Algoritma Pemrograman**.  
-Aplikasi ini dirancang untuk membantu pengguna memahami konsep algoritma melalui **simulasi interaktif**, di mana pengguna dapat memasukkan data secara langsung dan melihat hasil pemrosesan algoritma.
+AlgoLab Web Simulator Algoritma adalah sebuah **platform pembelajaran dan simulasi algoritma berbasis web** yang dikembangkan sebagai Project UAS mata kuliah Algoritma Pemrograman.  
+Platform ini bertujuan untuk membantu pengguna memahami konsep algoritma melalui simulasi dan visualisasi interaktif, sehingga pengguna dapat memasukkan data secara langsung dan melihat proses serta hasil kerja algoritma secara bertahap.
 
-Proyek ini mengimplementasikan beberapa studi kasus algoritma yang telah ditentukan dalam ketentuan UAS dan disajikan dalam satu aplikasi terpadu.
-
-##  ✏️ Tujuan Pembuatan
-- Memenuhi tugas Project UAS mata kuliah Algoritma Pemrograman
-- Membantu pengguna memahami alur kerja dan logika algoritma melalui simulasi langsung
-- Meningkatkan pemahaman pembelajaran algoritma dengan memberikan pengalaman belajar yang lebih visual dan praktis
-- Mengimplementasikan konsep algoritma ke dalam bentuk aplikasi interaktif berbasis web
-
-
-## 🧩 Studi Kasus Algoritma yang Diimplementasikan
-Aplikasi ini mengimplementasikan **tiga studi kasus algoritma**, yaitu:
-### 1. Huffman Coding  
-Algoritma Huffman Coding digunakan untuk melakukan kompresi data berdasarkan frekuensi kemunculan karakter dengan membangun pohon Huffman.
-### 2. Binary Search Tree (BST)  
-Binary Search Tree digunakan untuk menyimpan data dalam struktur pohon biner terurut.  
-Aplikasi ini juga mendukung operasi traversal pada BST, yaitu:
-- InOrder  
-- PreOrder  
-- PostOrder
-### 3. Algoritma Dijkstra  
-Algoritma Dijkstra digunakan untuk menentukan jalur terpendek dari satu simpul ke simpul lain pada graf berbobot.
+Proyek ini mengimplementasikan beberapa studi kasus algoritma yang telah ditentukan dalam ketentuan UAS dan disajikan dalam satu sistem terpadu.
 
 ---
 
-## ⚙️ Fitur Aplikasi
-- Aplikasi berbasis web yang interaktif  
-- Input data algoritma langsung oleh pengguna  
-- Simulasi hasil algoritma secara real-time
+## 🎯 Tujuan Pembuatan
+- Memenuhi tugas Project UAS mata kuliah Algoritma Pemrograman
+- Membantu pengguna memahami alur kerja dan logika algoritma
+- Menyediakan media pembelajaran algoritma yang interaktif
+- Mengimplementasikan konsep algoritma ke dalam sebuah platform simulasi berbasis web
 
+---
+
+## 🧩 Studi Kasus Algoritma
+Platform ini mengimplementasikan beberapa **studi kasus algoritma** yang digunakan sebagai media simulasi dan pembelajaran, yaitu:
+1. **Huffman Coding** – Algoritma kompresi data yang bekerja berdasarkan frekuensi kemunculan karakter.
+2. **Binary Search Tree (BST)** – Struktur data pohon biner terurut yang mendukung proses pencarian dan traversal data, meliputi:
+   - InOrder  
+   - PreOrder  
+   - PostOrder  
+3. **Algoritma Dijkstra** – Algoritma untuk menentukan jalur terpendek dari satu simpul ke simpul lain pada graf berbobot. 
+
+---
+
+## ⚙️ Fitur Platform
+- Platform berbasis web yang interaktif
+- Input data algoritma langsung oleh pengguna
+- Simulasi dan visualisasi hasil algoritma secara real-time
+- Mendukung beberapa algoritma dalam satu platform
+
+---
 
 ## 🖥️ Teknologi yang Digunakan
-- **Backend** : Python, Flask
-- **Frontend** : HTML, CSS, JavaScript
 
- ---
+<div align="center">
 
- ## ▶️ Cara Menjalankan dan Menggunakan Aplikasi
+### 🔧 Backend
+<img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python">
+<img src="https://img.shields.io/badge/Flask-Web_Framework-black?style=for-the-badge&logo=flask">
 
-Aplikasi **AlgoLab Web Simulator Algoritma** dapat digunakan melalui dua cara, yaitu melalui **Online** dan **menjalankan secara lokal**.
+<br/><br/>
 
+### 🎨 Frontend
+<img src="https://img.shields.io/badge/HTML-Structure-orange?style=for-the-badge&logo=html5">
+<img src="https://img.shields.io/badge/CSS-Styling-blue?style=for-the-badge&logo=css3">
+<img src="https://img.shields.io/badge/JavaScript-Logic-yellow?style=for-the-badge&logo=javascript">
 
-### 🌐 Menjalankan Aplikasi (Online)
+</div>
 
-Aplikasi dapat diakses secara langsung tanpa instalasi melalui link berikut:
+---
 
-🔗 **Online**  
+## 📂 Struktur Project
+
+```text
+AlgoLab-Web-Simulator-Algoritma/
+├── backend/
+│   ├── app.py
+│   ├── bst.py
+│   ├── dijkstra.py
+│   └── huffman.py
+├── frontend/
+│   ├── static/
+│   │   ├── style.css
+│   │   └── script.js
+│   └── templates/
+│       └── index.html
+├── image/
+│   ├── home.png
+│   ├── pilih-algoritma.png
+│   ├── huffman.png
+│   ├── bst.png
+│   └── dijkstra.png
+├── venv/
+├── requirements.txt
+└── README.md
+````
+
+---
+
+## 📸 Tampilan Antarmuka Platform
+
+### 🏠 Halaman Utama
+
+![Halaman Utama](image/home.png)
+
+### 📊 Menu Pemilihan Algoritma
+
+![Pilih Algoritma](image/pilih-algoritma.png)
+
+### 🔐 Huffman Coding
+
+![Huffman Coding](image/huffman.png)
+
+### 🌳 Binary Search Tree
+
+![Binary Search Tree](image/bst.png)
+
+### 🗺️ Algoritma Dijkstra
+
+![Algoritma Dijkstra](image/dijkstra.png)
+
+---
+
+## ▶️ Cara Menjalankan Platform
+
+### 🌐 Menjalankan Platform (Online)
+
+Platform dapat diakses secara langsung melalui:
+
+```
 https://algolab.pythonanywhere.com/
+```
 
-#### Langkah Penggunaan:
-1. Buka browser (Chrome, Edge, atau Firefox disarankan)
-2. Akses link: https://algolab.pythonanywhere.com/
-3. Pilih algoritma yang ingin disimulasikan:
-   - Huffman Coding
-   - Binary Search Tree
-   - Algoritma Dijkstra  
-5. Masukkan data sesuai dengan algoritma yang dipilih
-6. Jalankan simulasi untuk melihat hasil pemrosesan algoritma
+---
 
-Aplikasi bersifat **interaktif**, sehingga pengguna dapat mencoba berbagai variasi input untuk memahami cara kerja algoritma.
+### 💻 Menjalankan Platform Secara Lokal
 
+1. Clone repository ini
+2. Masuk ke folder project
+3. Buat virtual environment:
 
+```bash
+python -m venv venv
+```
 
-### 💻 Menjalankan Aplikasi Secara Lokal
+4. Aktifkan virtual environment:
 
-Aplikasi juga dapat dijalankan secara lokal dengan langkah-langkah berikut:
+* Windows:
 
-1. Clone repository project
-2. Buka folder project menggunakan **VS Code** atau editor lain
-3. Buka terminal pada folder project
-4. Jalankan perintah berikut:
+```bash
+venv\Scripts\activate
+```
+
+* Linux / macOS:
+
+```bash
+source venv/bin/activate
+```
+
+5. Install dependency:
+
 ```bash
 pip install -r requirements.txt
+```
+
+6. Jalankan Platform:
+
+```bash
 python backend/app.py
 ```
-5. Buka browser dan akses: http://localhost:5000
+
+7. Buka browser dan akses:
+
+```
+http://localhost:5000
+```
+
+---
+
+## 📌 Catatan
+
+Platform ini dikembangkan untuk keperluan **akademik dan pembelajaran**.
+Server Flask yang digunakan merupakan **development server**.
+
+---
