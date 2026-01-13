@@ -62,15 +62,25 @@ Platform ini mengimplementasikan beberapa **studi kasus algoritma** yang digunak
 
 ## 🖥️ Teknologi yang Digunakan
 
+### 🔧 Backend
+
 <div align="center">
 
-### 🔧 Backend
+<img src="https://skillicons.dev/icons?i=python,flask" /><br/>
+
 <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white">
 <img src="https://img.shields.io/badge/Flask-Web_Framework-black?style=for-the-badge&logo=flask&logoColor=white">
 
-<br/><br/>
+</div>
+
+---
 
 ### 🎨 Frontend
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=html,css,javascript" /><br/>
+
 <img src="https://img.shields.io/badge/HTML-Structure-orange?style=for-the-badge&logo=html5&logoColor=white">
 <img src="https://img.shields.io/badge/CSS-Styling-blue?style=for-the-badge&logo=css3&logoColor=white">
 <img src="https://img.shields.io/badge/JavaScript-Logic-yellow?style=for-the-badge&logo=javascript&logoColor=black">
