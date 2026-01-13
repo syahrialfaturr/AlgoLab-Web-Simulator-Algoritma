@@ -1,4 +1,5 @@
 # *🧠 AlgoLab Web Simulator Algoritma*
+---
 
 >**Ujian Akhir Semester - Algoritma Pemrograman**  
 >🏛️ Universitas Muhammadiyah Malang - 2025
@@ -19,7 +20,7 @@ Aplikasi ini dirancang untuk membantu pengguna memahami konsep algoritma melalui
 
 Proyek ini mengimplementasikan beberapa studi kasus algoritma yang telah ditentukan dalam ketentuan UAS dan disajikan dalam satu aplikasi terpadu.
 
-##  Tujuan Pembuatan
+##  ✏️ Tujuan Pembuatan
 - Memenuhi tugas Project UAS mata kuliah Algoritma Pemrograman
 - Membantu pengguna memahami alur kerja dan logika algoritma melalui simulasi langsung
 - Meningkatkan pemahaman pembelajaran algoritma dengan memberikan pengalaman belajar yang lebih visual dan praktis
@@ -46,7 +47,6 @@ Algoritma Dijkstra digunakan untuk menentukan jalur terpendek dari satu simpul k
 - Input data algoritma langsung oleh pengguna  
 - Simulasi hasil algoritma secara real-time
 
----
 
 ## 🖥️ Teknologi yang Digunakan
 - **Backend** : Python, Flask
@@ -58,13 +58,12 @@ Algoritma Dijkstra digunakan untuk menentukan jalur terpendek dari satu simpul k
 
 Aplikasi **AlgoLab Web Simulator Algoritma** dapat digunakan melalui dua cara, yaitu melalui **Online** dan **menjalankan secara lokal**.
 
----
 
 ### 🌐 Menjalankan Aplikasi (Online)
 
 Aplikasi dapat diakses secara langsung tanpa instalasi melalui link berikut:
 
-🔗 **Live Demo**  
+🔗 **Online**  
 https://algolab.pythonanywhere.com/
 
 #### Langkah Penggunaan:
