@@ -65,15 +65,15 @@ Platform ini mengimplementasikan beberapa **studi kasus algoritma** yang digunak
 <div align="center">
 
 ### 🔧 Backend
-<img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python">
-<img src="https://img.shields.io/badge/Flask-Web_Framework-black?style=for-the-badge&logo=flask">
+<img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python&logoColor=white">
+<img src="https://img.shields.io/badge/Flask-Web_Framework-black?style=for-the-badge&logo=flask&logoColor=white">
 
 <br/><br/>
 
 ### 🎨 Frontend
-<img src="https://img.shields.io/badge/HTML-Structure-orange?style=for-the-badge&logo=html5">
-<img src="https://img.shields.io/badge/CSS-Styling-blue?style=for-the-badge&logo=css3">
-<img src="https://img.shields.io/badge/JavaScript-Logic-yellow?style=for-the-badge&logo=javascript">
+<img src="https://img.shields.io/badge/HTML-Structure-orange?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/CSS-Styling-blue?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/JavaScript-Logic-yellow?style=for-the-badge&logo=javascript&logoColor=black">
 
 </div>
 
