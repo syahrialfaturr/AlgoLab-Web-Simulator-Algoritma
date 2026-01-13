@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #0f172a, #020617);
+    color: white;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+    width: 250px;
+    background: #020617;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    color: #38bdf8;
+}
+
+.sidebar button {
+    background: #1e293b;
+    border: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar button:hover {
+    background: #38bdf8;
+    transform: scale(1.05);
+}
+
+/* ================= MAIN ================= */
+.main {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.card {
+    background: #020617;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    overflow-y: auto;
+}
+
+/* ================= FORM ================= */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+button.action {
+    margin-top: 15px;
+    padding: 12px 20px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 12px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.action:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
+}
+
+/* ================= ALERT ================= */
+.alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ef4444;
+    padding: 15px 25px;
+    border-radius: 12px;
+    display: none;
+}
+
+/* ================= HUFFMAN ================= */
+#output {
+    margin-top: 20px;
+}
+
+.huffman-codes {
+    background: rgba(255,255,255,0.04);
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.huff-item {
+    background: #0f172a;
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+    box-shadow: 0 0 10px rgba(56,189,248,0.3);
+    padding: 10px 15px;
+    border-radius: 10px;
+    min-width: 120px;
+    text-align: center;
+}
+
+.huffman-encode {
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.huff-bit {
+    background: #facc15;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* ================= BST ================= */
+.tree-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tree-node {
+    width: 50px;
+    height: 50px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    opacity: 0;
+    animation: pop 0.4s ease forwards;
+}
+
+@keyframes pop {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* ================= DIJKSTRA ================= */
+.path-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.path-node {
+    width: 50px;
+    height: 50px;
+    background: #22c55e;
+    color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    opacity: 0;
+    animation: slide 0.5s ease forwards;
+}
+
+@keyframes slide {
+    from { transform: translateX(-30px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* ================= ANIMATIONS ================= */
+.fade {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {opacity:0; transform:translateY(20px);}
+    to {opacity:1; transform:translateY(0);}
+}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:800px) {
+    .sidebar { width: 100px; }
+    .sidebar button { font-size: 12px; }
+}
+
+/* ================= LIGHT MODE ================= */
+.light body {
+    background: #f8fafc;
+    color: #020617;
+}
+
+.light .sidebar {
+    background: #e5e7eb;
+}
+
+.light .card {
+    background: white;
+    color: black;
+}
+
+/* ===== Huffman Animations ===== */
+.huff-item {
+    animation: glowIn 0.4s ease forwards;
+    opacity: 0;
+}
+
+.huff-bit {
+    animation: slideIn 0.4s ease forwards;
+    opacity: 0;
+}
+
+@keyframes glowIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(56,189,248,0);
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+        box-shadow: 0 0 15px rgba(56,189,248,0.6);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(15px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

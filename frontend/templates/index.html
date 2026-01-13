@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>AlgoLab</title>
+    <meta charset="UTF-8">
+    <title>AlgoLab – Algorithm Simulator</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>AlgoLab – Algorithm Simulator</h1>
 
-    <button onclick="show('huffman')">Huffman</button>
-    <button onclick="show('bst')">BST</button>
-    <button onclick="show('dijkstra')">Dijkstra</button>
+    <div class="app">
 
-    <hr>
+        <div class="sidebar">
+            <h2>AlgoLab</h2>
+            <button onclick="toggleTheme()">🌙 / ☀️</button>
+            <button onclick="show('huffman')">📦 Huffman</button>
+            <button onclick="show('bst')">🌳 Binary Search Tree</button>
+            <button onclick="show('dijkstra')">🗺️ Dijkstra</button>
+        </div>
 
-    <div id="content"></div>
+        <div class="main">
+            <div id="content" class="card fade"></div>
+        </div>
+
+    </div>
+
+    <div id="alertBox" class="alert"></div>
 
     <script src="/static/script.js"></script>
 </body>

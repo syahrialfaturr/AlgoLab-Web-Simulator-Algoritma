@@ -1,34 +1,36 @@
-# backend/dijkstra.py
-
 import heapq
 
 def dijkstra(graph, start, end):
-    pq = []
-    heapq.heappush(pq, (0, start))
+    pq = [(0, start)]
 
-    distances = {node: float("inf") for node in graph}
-    distances[start] = 0
-
+    distances = {}
     previous = {}
 
+    for node in graph:
+        distances[node] = float("inf")
+
+    distances[start] = 0
+
     while pq:
-        current_dist, current_node = heapq.heappop(pq)
+        current_dist, current = heapq.heappop(pq)
 
-        if current_node == end:
-            break
+        if current_dist > distances[current]:
+            continue
 
-        for neighbor, weight in graph[current_node].items():
-            distance = current_dist + weight
+        for neighbor, weight in graph[current].items():
+            new_dist = current_dist + weight
 
-            if distance < distances[neighbor]:
-                distances[neighbor] = distance
-                previous[neighbor] = current_node
-                heapq.heappush(pq, (distance, neighbor))
+            if new_dist < distances[neighbor]:
+                distances[neighbor] = new_dist
+                previous[neighbor] = current
+                heapq.heappush(pq, (new_dist, neighbor))
 
-    # Bangun path
+    if distances[end] == float("inf"):
+        return {"error": "Tidak ada jalur"}
+
     path = []
     node = end
-    while node in previous:
+    while node != start:
         path.append(node)
         node = previous[node]
     path.append(start)
@@ -39,14 +41,12 @@ def dijkstra(graph, start, end):
         "distance": distances[end]
     }
 
-
 # ======================
 # Wrapper API
 # ======================
 def process_dijkstra(edges, start, end):
     graph = {}
 
-    # Bangun graph
     for u, v, w in edges:
         if u not in graph:
             graph[u] = {}
@@ -54,6 +54,9 @@ def process_dijkstra(edges, start, end):
             graph[v] = {}
 
         graph[u][v] = w
-        graph[v][u] = w   # undirected
+        graph[v][u] = w   
+
+    if start not in graph or end not in graph:
+        return {"error": "Start atau End tidak ada di graph"}
 
     return dijkstra(graph, start, end)

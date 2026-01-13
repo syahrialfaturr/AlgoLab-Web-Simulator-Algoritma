@@ -1,11 +1,9 @@
 # backend/bst.py
-
 class BSTNode:
     def __init__(self, value):
         self.value = value
         self.left = None
         self.right = None
-
 
 # ======================
 # Insert ke BST
@@ -20,7 +18,6 @@ def insert(root, value):
         root.right = insert(root.right, value)
 
     return root
-
 
 # ======================
 # Traversals
@@ -42,7 +39,6 @@ def postorder(root, result):
         postorder(root.left, result)
         postorder(root.right, result)
         result.append(root.value)
-
 
 # ======================
 # Main API Function

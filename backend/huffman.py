@@ -14,7 +14,6 @@ class HuffmanNode:
     def __lt__(self, other):
         return self.freq < other.freq
 
-
 # =============================
 # Bangun Huffman Tree
 # =============================
@@ -25,7 +24,6 @@ def build_huffman_tree(text):
     for char, freq in frequency.items():
         heapq.heappush(heap, HuffmanNode(char, freq))
 
-    # Gabungkan node sampai tinggal satu
     while len(heap) > 1:
         left = heapq.heappop(heap)
         right = heapq.heappop(heap)
@@ -37,7 +35,6 @@ def build_huffman_tree(text):
         heapq.heappush(heap, merged)
 
     return heap[0], frequency
-
 
 # =============================
 # Generate kode biner
@@ -53,7 +50,6 @@ def generate_codes(node, prefix="", code_map={}):
     generate_codes(node.right, prefix + "1", code_map)
 
     return code_map
-
 
 # =============================
 # Encode teks
