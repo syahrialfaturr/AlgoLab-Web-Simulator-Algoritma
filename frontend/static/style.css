@@ -269,3 +269,308 @@ button.action:hover {
         opacity: 1;
     }
 }
+
+/* ================= WELCOME DASHBOARD ================= */
+.hidden {
+    display: none !important;
+}
+
+.welcome-dashboard {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+    background: linear-gradient(135deg, #0f172a 0%, #020617 50%, #0c1929 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-dashboard::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.1) 0%, transparent 70%);
+    top: -200px;
+    right: -200px;
+    animation: pulse 4s ease-in-out infinite;
+}
+
+.welcome-dashboard::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(34, 197, 94, 0.1) 0%, transparent 70%);
+    bottom: -100px;
+    left: -100px;
+    animation: pulse 5s ease-in-out infinite reverse;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.welcome-content {
+    z-index: 1;
+    animation: fadeInUp 0.8s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome-icon {
+    font-size: 80px;
+    margin-bottom: 20px;
+    animation: bounce 2s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+.welcome-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.welcome-title .highlight {
+    color: #38bdf8;
+    text-shadow: 0 0 30px rgba(56, 189, 248, 0.5);
+}
+
+.welcome-subtitle {
+    font-size: 1.3rem;
+    color: #94a3b8;
+    margin-bottom: 10px;
+}
+
+.welcome-desc {
+    font-size: 1rem;
+    color: #64748b;
+    max-width: 500px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
+.start-btn {
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #000;
+    border: none;
+    padding: 18px 45px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 40px rgba(56, 189, 248, 0.3);
+}
+
+.start-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 15px 50px rgba(56, 189, 248, 0.4);
+}
+
+.start-btn .btn-arrow {
+    transition: transform 0.3s ease;
+}
+
+.start-btn:hover .btn-arrow {
+    transform: translateX(5px);
+}
+
+.welcome-features {
+    display: flex;
+    gap: 40px;
+    margin-top: 60px;
+    z-index: 1;
+    animation: fadeInUp 0.8s ease 0.3s backwards;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+.feature-icon {
+    font-size: 1.3rem;
+}
+
+/* ================= ALGORITHM MENU ================= */
+.algo-menu {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #0f172a 0%, #020617 50%, #0c1929 100%);
+}
+
+.algo-menu-content {
+    text-align: center;
+    animation: fadeInUp 0.6s ease;
+}
+
+.algo-menu-title {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.algo-menu-subtitle {
+    color: #94a3b8;
+    margin-bottom: 40px;
+}
+
+.algo-cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.algo-card {
+    background: rgba(30, 41, 59, 0.8);
+    border: 1px solid #334155;
+    border-radius: 20px;
+    padding: 30px;
+    width: 280px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.algo-card:hover {
+    transform: translateY(-10px);
+    border-color: #38bdf8;
+    box-shadow: 0 20px 40px rgba(56, 189, 248, 0.2);
+    background: rgba(30, 41, 59, 1);
+}
+
+.algo-card-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.algo-card h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.algo-card p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.back-btn {
+    margin-top: 40px;
+    background: transparent;
+    border: 2px solid #475569;
+    color: #94a3b8;
+    padding: 12px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.back-btn:hover {
+    border-color: #38bdf8;
+    color: #38bdf8;
+}
+
+/* ================= HOME BUTTON ================= */
+.home-btn {
+    margin-top: auto;
+    background: #334155 !important;
+}
+
+.home-btn:hover {
+    background: #475569 !important;
+}
+
+/* ================= LIGHT MODE ADDITIONS ================= */
+.light .welcome-dashboard,
+.light .algo-menu {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.light .welcome-title {
+    color: #0f172a;
+}
+
+.light .welcome-subtitle,
+.light .welcome-desc {
+    color: #475569;
+}
+
+.light .algo-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: #cbd5e1;
+}
+
+.light .algo-card:hover {
+    border-color: #0ea5e9;
+    box-shadow: 0 20px 40px rgba(14, 165, 233, 0.15);
+}
+
+.light .algo-card p {
+    color: #64748b;
+}
+
+.light .algo-menu-title {
+    color: #0f172a;
+}
+
+.light .algo-menu-subtitle {
+    color: #64748b;
+}
+
+.light .feature-item {
+    color: #475569;
+}
+
+/* ================= RESPONSIVE DASHBOARD ================= */
+@media (max-width: 900px) {
+    .welcome-title {
+        font-size: 2rem;
+    }
+    
+    .welcome-features {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .algo-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .algo-card {
+        width: 100%;
+        max-width: 300px;
+    }
+}

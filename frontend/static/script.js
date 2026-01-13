@@ -1,3 +1,31 @@
+/* ===========================
+   Dashboard Navigation
+=========================== */
+function showAlgoMenu() {
+    document.getElementById('welcomeDashboard').classList.add('hidden');
+    document.getElementById('algoMenu').classList.remove('hidden');
+    document.getElementById('mainApp').classList.add('hidden');
+}
+
+function showWelcome() {
+    document.getElementById('welcomeDashboard').classList.remove('hidden');
+    document.getElementById('algoMenu').classList.add('hidden');
+    document.getElementById('mainApp').classList.add('hidden');
+}
+
+function selectAlgo(type) {
+    document.getElementById('welcomeDashboard').classList.add('hidden');
+    document.getElementById('algoMenu').classList.add('hidden');
+    document.getElementById('mainApp').classList.remove('hidden');
+    show(type);
+}
+
+function goHome() {
+    document.getElementById('welcomeDashboard').classList.remove('hidden');
+    document.getElementById('algoMenu').classList.add('hidden');
+    document.getElementById('mainApp').classList.add('hidden');
+}
+
 function show(type) {
     if (type === "huffman") {
         document.getElementById("content").innerHTML = `

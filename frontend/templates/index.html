@@ -10,7 +10,64 @@
 
 <body>
 
-    <div class="app">
+    <!-- Welcome Dashboard -->
+    <div id="welcomeDashboard" class="welcome-dashboard">
+        <div class="welcome-content">
+            <div class="welcome-icon">🧪</div>
+            <h1 class="welcome-title">Selamat Datang di <span class="highlight">AlgoLab</span></h1>
+            <p class="welcome-subtitle">Platform Simulasi & Visualisasi Algoritma Interaktif</p>
+            <p class="welcome-desc">Pelajari dan pahami algoritma populer dengan visualisasi yang menarik dan mudah dipahami.</p>
+            <button class="start-btn" onclick="showAlgoMenu()">
+                <span>Mulai Eksplorasi</span>
+                <span class="btn-arrow">→</span>
+            </button>
+        </div>
+        <div class="welcome-features">
+            <div class="feature-item">
+                <span class="feature-icon">📊</span>
+                <span>Visualisasi Interaktif</span>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">⚡</span>
+                <span>Real-time Processing</span>
+            </div>
+            <div class="feature-item">
+                <span class="feature-icon">🎓</span>
+                <span>Mudah Dipelajari</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Algorithm Selection Menu -->
+    <div id="algoMenu" class="algo-menu hidden">
+        <div class="algo-menu-content">
+            <h2 class="algo-menu-title">Pilih Algoritma</h2>
+            <p class="algo-menu-subtitle">Klik salah satu untuk mulai simulasi</p>
+            <div class="algo-cards">
+                <div class="algo-card" onclick="selectAlgo('huffman')">
+                    <div class="algo-card-icon">📦</div>
+                    <h3>Huffman Coding</h3>
+                    <p>Kompresi data dengan pengkodean optimal berbasis frekuensi karakter</p>
+                </div>
+                <div class="algo-card" onclick="selectAlgo('bst')">
+                    <div class="algo-card-icon">🌳</div>
+                    <h3>Binary Search Tree</h3>
+                    <p>Struktur data pohon biner untuk pencarian dan pengurutan efisien</p>
+                </div>
+                <div class="algo-card" onclick="selectAlgo('dijkstra')">
+                    <div class="algo-card-icon">🗺️</div>
+                    <h3>Dijkstra Algorithm</h3>
+                    <p>Menemukan jalur terpendek dalam graf berbobot</p>
+                </div>
+            </div>
+            <button class="back-btn" onclick="showWelcome()">
+                ← Kembali
+            </button>
+        </div>
+    </div>
+
+    <!-- Main App -->
+    <div id="mainApp" class="app hidden">
 
         <div class="sidebar">
             <h2>AlgoLab</h2>
@@ -18,6 +75,7 @@
             <button onclick="show('huffman')">📦 Huffman</button>
             <button onclick="show('bst')">🌳 Binary Search Tree</button>
             <button onclick="show('dijkstra')">🗺️ Dijkstra</button>
+            <button class="home-btn" onclick="goHome()">🏠 Home</button>
         </div>
 
         <div class="main">
